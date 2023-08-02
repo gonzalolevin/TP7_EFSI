@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
 import Personas from './Personas.js';
 
-function Listado()
-{
-    const [personas, setPersonas] = useState(Personas);
-
+function Listado(){
     return(
-        personas
+            <>
+            {Personas.map ((persona =>{
+                    <div key = {persona.id}>
+
+                    <Link to = {`Persona ${persona.id}`}></Link>
+                    </div>
+                } ))
+                }
+
+            </>
     )
 }
-
 export default Listado;
 
