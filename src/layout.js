@@ -1,31 +1,50 @@
-import { Outlet, Link } from "react-router-dom";
-import './index.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Layout = () => {
-  // el tag link es como el tag a, pero para react-router-dom, el to es como el href
-  // el tag outlet es como el tag div, pero para react-router-dom
-
-  //Armo una barra de navegación con estilos de CSS
+function Layout({ children }) {
   return (
-    <>
-      
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Contactos">Contactos</Link>
-          </li>
-          <li>
-            <Link to="/Estadisticas">Estadisticas</Link>
-          </li>
-        </ul>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <Link to="/" className="navbar-brand">
+            TP7 EFSI
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/estadisticas" className="nav-link">
+                  Estadísticas
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contacto" className="nav-link">
+                  Contacto
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
-      <Outlet />
-    </>
-  )
-};
+      <main className="container mt-4">{children}</main>
+    </div>
+  );
+}
 
 export default Layout;
