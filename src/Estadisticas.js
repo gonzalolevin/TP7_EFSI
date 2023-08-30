@@ -4,12 +4,12 @@ import Personas from './Personas.json';
 
 // reduce y filter 
 
-function Estadisticas(){
+function Estadisticas(){/*
     return (
         <div>
-            <ul class="list-group">
+            <ul className="list-group">
                 {Personas.map((persona) => (
-                    <li class="list-group-item">
+                    <li className="list-group-item">
                         <div key={persona.id}>
                         </div>
                     </li>
@@ -17,5 +17,7 @@ function Estadisticas(){
             </ul>
         </div>
       );
+      */
     }
+
 export default Estadisticas;

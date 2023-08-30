@@ -11,11 +11,11 @@ function Home(){
 
 
         <div>
-        <ul class="list-group">
+        <ul className="list-group">
         
   
           {Personas.map((persona) => (
-            <li class="list-group-item">
+            <li className="list-group-item">
                 <div key={persona.id}>
                 <Link to={`/persona/${persona.id}`} className="nav-link">
                     <h2>{persona.nombre} {persona.apellido}</h2>

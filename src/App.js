@@ -9,13 +9,12 @@ import Persona from "./Persona.js";
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout> {/* Assuming Layout should wrap around the routes */}
+      <Layout> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Contactos" element={<Contactos />} />
           <Route path="/Estadisticas" element={<Estadisticas />} />
           <Route path="/Error" element={<Error />} />
-          {/* Define the route for Persona */}
           <Route path="/persona/:id" element={<Persona />} />
         </Routes>
       </Layout>

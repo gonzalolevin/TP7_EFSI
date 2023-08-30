@@ -33,7 +33,7 @@ function Layout({ children }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/contacto" className="nav-link">
+                <Link to="/Contactos" className="nav-link">
                   Contacto
                 </Link>
               </li>

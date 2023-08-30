@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Personas from './Personas.js';
+import { Link } from 'react-router-dom';
 
 function Listado(){
     return(

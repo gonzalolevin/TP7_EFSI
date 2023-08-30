@@ -3,9 +3,8 @@ import Personas from "./Personas.json";
 import { useParams } from "react-router-dom";
 
 function Persona() {
-  const { id } = useParams(); // Access the "id" parameter from the props
+  const { id } = useParams(); 
 
-  // Find the person with the matching ID
   const persona = Personas.find((persona) => persona.id === id);
 console.log(persona)
   if (!persona) {
