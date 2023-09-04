@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout.js";
 import Estadisticas from "./Estadisticas";
 import Contactos from "./Contactos.js";
-import Error from "./Error.js"
 import Home from "./Home.js";
 import Persona from "./Persona.js";
 
@@ -14,7 +13,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Contactos" element={<Contactos />} />
           <Route path="/Estadisticas" element={<Estadisticas />} />
-          <Route path="/Error" element={<Error />} />
           <Route path="/persona/:id" element={<Persona />} />
         </Routes>
       </Layout>

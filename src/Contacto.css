@@ -1,0 +1,41 @@
+/* Contacto.css */
+
+.contacto-container {
+    border: 2px solid red; /* Red border for the container */
+    padding: 20px; /* Add some padding for spacing */
+    width: 300px; /* Adjust the width as needed */
+    margin-left: auto; /* Align to the left */
+    margin-right: auto; /* Align to the left */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button.submit-button {
+    background-color: red; /* Red submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  button.submit-button:hover {
+    background-color: darkred; /* Darker red on hover */
+  }

@@ -1,41 +1,39 @@
 import React, { useState } from 'react';
+import './Contacto.css'; // Import the CSS file
 
-function Contacto(){
-const [nombre, setNombre] = useState('');
-const [apellido, setApellido] = useState('');
-const [email, setEmail] = useState('');
-const [edad, setEdad] = useState('');
+function Contacto() {
+  const [nombre, setNombre] = useState('');
+  const [apellido, setApellido] = useState('');
+  const [email, setEmail] = useState('');
+  const [edad, setEdad] = useState('');
 
-const handleSubmit = () => {
+  const handleSubmit = () => {
     console.log('Form data:', nombre, apellido, email, edad);
   };
 
-return (
-    <form >
-    <label>
-      Nombre:
-      <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-    </label>
-    <br />
-    <label>
-      Apellido:
-      <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
-    </label>
-    <br />
-    <br />
-    <label>
-      Email:
-      <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-    </label>
-    <br />
-    <br />
-    <label>
-      Edad:
-      <input type="text" value={edad} onChange={(e) => setEdad(e.target.value)} />
-    </label>
-    <br />
-    <button type="button" onClick={handleSubmit}>Submit</button>
-  </form>
-);}
+  return (
+    <div className="contacto-container"> {/* Add the container div */}
+      <form>
+        <label>
+          Nombre:
+          <input type="text" className="input-field" value={nombre} onChange={(e) => setNombre(e.target.value)} />
+        </label>
+        <label>
+          Apellido:
+          <input type="text" className="input-field" value={apellido} onChange={(e) => setApellido(e.target.value)} />
+        </label>
+        <label>
+          Email:
+          <input type="text" className="input-field" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
+        <label>
+          Edad:
+          <input type="text" className="input-field" value={edad} onChange={(e) => setEdad(e.target.value)} />
+        </label>
+        <button type="button" className="submit-button" onClick={handleSubmit}>Submit</button>
+      </form>
+    </div>
+  );
+}
 
 export default Contacto;

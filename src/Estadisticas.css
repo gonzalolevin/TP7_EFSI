@@ -1,0 +1,57 @@
+/* Add this CSS to style the list */
+.personas-list {
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .personas-list h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Text color */
+  }
+  
+  .personas-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .personas-list li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555; /* Text color */
+  }
+  
+  /* Style for personas' names */
+  .personas-list li::before {
+    content: "\2022"; /* Bullet character (•) */
+    color: #ff3b30; /* Red bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
+  }
+  
+ .titulo {
+    text-align: center; /* Center text horizontally */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 36px; /* Adjust the font size */
+    color: #8b0000; /* Dark Red Text Color */
+    margin: 50px 0; /* Increased margin for more emphasis */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for an elegant look */
+  }
+
+  /* Add this CSS to center-align the list horizontally */
+.personas-list {
+    text-align: center;
+  }
+  
+  .personas-list ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left; /* Reset text alignment for list items */
+  }
+  
