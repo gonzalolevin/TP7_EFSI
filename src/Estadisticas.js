@@ -24,11 +24,11 @@ function Estadisticas() {
 
   return (
     <>
-     <h1 className="titulo"> ESTADISTICAS </h1>
+     <h1 className="titulo"> Estadisticas </h1>
      
       {personaMayorEdad && personaMenorEdad && (
         <>
-          <div className="container"> 
+          <div className=""> 
             <div class="card border-danger mb-3">
               <div class="card-body text-danger">
                 <div class="card-header">La persona de mayor edad es ...</div>
@@ -39,7 +39,7 @@ function Estadisticas() {
             </div>
           </div>
 
-          <div className="container"> 
+          <div className=""> 
             <div class="card border-warning mb-3">
               <div class="card-body text-warning">
                 <div class="card-header">La persona de menor edad es ...</div>

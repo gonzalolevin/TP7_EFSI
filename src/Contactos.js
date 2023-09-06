@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contacto.css'; // Import the CSS file
+import './Contacto.css'; 
 
 function Contacto() {
   const [nombre, setNombre] = useState('');
@@ -12,7 +12,10 @@ function Contacto() {
   };
 
   return (
-    <div className="contacto-container"> {/* Add the container div */}
+    <>
+    <h1 className="titulo"> Contacto </h1>
+
+    <div className="contacto-container"> 
       <form>
         <label>
           Nombre:
@@ -33,6 +36,7 @@ function Contacto() {
         <button type="button" className="submit-button" onClick={handleSubmit}>Submit</button>
       </form>
     </div>
+    </>
   );
 }
 

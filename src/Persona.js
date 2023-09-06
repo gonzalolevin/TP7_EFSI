@@ -13,8 +13,10 @@ function Persona() {
   }
 
   return (
+  <>
+    <h1 className="titulo"> Contacto </h1>
     
-    <div className="container"> 
+    <div className=""> 
       <div class="card border-danger mb-3">
       <div class="card-body text-danger">
         
@@ -27,6 +29,7 @@ function Persona() {
   </div>
 </div>
     </div>
+    </>
   );
 }
 

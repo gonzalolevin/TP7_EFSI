@@ -1,4 +1,3 @@
-/* Add this CSS to style the list */
 .personas-list {
     margin: 20px 0;
     padding: 0;
@@ -8,7 +7,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333; /* Text color */
+    color: #333; 
   }
   
   .personas-list ul {
@@ -19,13 +18,13 @@
   .personas-list li {
     font-size: 18px;
     margin-bottom: 8px;
-    color: #555; /* Text color */
+    color: #555; 
   }
   
-  /* Style for personas' names */
+  
   .personas-list li::before {
-    content: "\2022"; /* Bullet character (•) */
-    color: #ff3b30; /* Red bullet color */
+    content: "\2022";
+    color: #ff3b30; 
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -34,16 +33,16 @@
   }
   
  .titulo {
-    text-align: center; /* Center text horizontally */
-    font-family:'Times New Roman', Times, serif;
-    font-size: 36px; /* Adjust the font size */
-    color: #8b0000; /* Dark Red Text Color */
-    margin: 50px 0; /* Increased margin for more emphasis */
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 2px; /* Add letter spacing for an elegant look */
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin: 25px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
   }
 
-  /* Add this CSS to center-align the list horizontally */
+
 .personas-list {
     text-align: center;
   }
@@ -52,6 +51,6 @@
     list-style: none;
     padding: 0;
     display: inline-block;
-    text-align: left; /* Reset text alignment for list items */
+    text-align: left; 
   }
   
